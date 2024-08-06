@@ -1,0 +1,10 @@
+var emailAddress = formData.email;
+  var subject = "Reservation Confirmation";
+  var message = "Hello " + formData.name + ",\n\n" +
+                "Thank you for your reservation. Here are the details:\n" +
+                "Name: " + formData.name + "\n" +
+                "Email: " + formData.email + "\n" +
+                "Message: " + formData.message + "\n\n" +
+                "We look forward to serving you!";
+  
+  MailApp.sendEmail(emailAddress, subject, message);
